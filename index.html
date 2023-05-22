@@ -2,127 +2,112 @@
 <html lang="en">
 
 <head>
-  <link 
-  rel="stylesheet"
-  href="style.css"
-  />
   <meta charset="UTF-8">
-  <title>Ikram's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biryani</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <style>
-    body{
-      background-color: antiquewhite;
-      font-size: 25px;
-      }
-    @media(max-width:600px){
-      body{
-        font-size: 15px;
-      }
-    }
-     h1{
-      color: whitesmoke;
-      background-color: darkseagreen;
-      text-align: center;
-     }
-     @media(max-width:600px){
-      h1{
-        text-align: center;
-      }
-     }
-     h2{
-      color: antiquewhite;
-      background-color: blueviolet;
-      text-align: center;
-     }
-     @media(max-width:600px){
-      h2{
-        text-align: center;
-      }
-    }
-
-     h3{
-      color: whitesmoke;
-      background-color: #A459D1;
-     
-     }
-  
-     .GFG {
-      background-color: white;
-            border: 2px solid black;
-            color: green;
-            padding: 5px 10px;
-           text-align: right;
-            display: inline-block;
-            font-size: 20px;
-            margin: 10px 30px;
-            cursor: pointer;
-            text-decoration:none;
-        }
-       
-        .AFG{
-          background-color: white;
-            border: 2px solid black;
-            color: green;
-            padding: 5px 10px;
-           text-align: right;
-            display: inline-block;
-            font-size: 20px;
-            margin: 10px 30px;
-            cursor: pointer;
-            text-decoration:none;
-        }
-        @media (max-width: 680px) {
-  img{
-    width: 100px;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-    text-align: center;
-  }
-  h2 {
-    font-size: 3.5rem;
-    text-align: center;
-  }
+  <div class="topmenu">
+    <nav>
+     <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Contact Us</a></li>
+     </ul>
+     <a href="#" class="button">Subscibe</a>
 
 
-  .aisach {
-    width: 100%;
-    display: block;
-    margin-bottom: 30px;
-    text-align: justify;
-  }
+    </nav>
+  </div>
+  <div class="karneka">
+    <h1>Ikram Soudagar's <span class="haha">Portfolio </span> <br></h1>
+    <img class="logo" src="./assets/images/ikramlogo.jpg" height:"100px" width="100px" alt="logo">
+    <h2 class"class">Hi I am an FrontEnd Developer</h2><br><br><br><br>
+    <div class="newslatter">
+      <form>
+        <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+        <input type="submit" name="submit" value="Lets Start">
+      </form>
+    </div>
+<!------about section-->
+  </div>
+  <section class="about">
+    <div class="main">
+      <img src="./assets/images/about.jpg" width="40%"> 
+      <div class="about-text">
+        <h2>About Me</h2>
+        <h5>Developer <span>& Debugger</span></h5>
+        <p>I am an front-end web developer. I can provide clean code and can make interactive websites which are suitable for any type of devices. A responsive webpages makes your website accesible to all users, regardless of their device. </p>
+        <button type="button">Let's Talk</button>
+      </div>
+    </div>
+  </section>
+<!----services section-->
+<div class="service">
+  <div class="title">
+    <h2>Our Services</h2>
+  </div>
+  <div class="box">
+    <div class="card">
+      <i class="fa-solid fa-bars"></i>
+      <h5>Web Developer</h5>
+      <div class="pra">
+        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible</p>
+        <p style="text-align: center;">
+        <a class="button" href="#">Read More</a>
+      </p>
+      </div>
+    </div>
 
-  .GFG {
-    margin-bottom: 10px;
-    width: 100%;
-    display: inline;
-    object-fit: cover;
-  }
-  .AFG {
-    margin-bottom: 10px;
-    width: 100%;
-    display: inline;
-    object-fit: cover;
-  }
-}
+    <div class="card">
+      <i class="fa-light fa-user"></i>
+      <h5>Web Developer</h5>
+      <div class="pra">
+        <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible</p>
+        <p style="text-align: center;">
+        <a class="button" href="#">Read More</a>
+      </p>
+      </div>
+  </div>
 
-      
-      
-      </style>
-  <h1>Ikram Soudagar's Portfolio</h1>
-  <h2>I'm a Web Developer</h2>
-  <hr />
-  <h3 class="aisach"><button class="GFG"><a href="./public/movie-ranking.html">Movie Ranking Project</button></a></h3>
-  <img src="./assets/images/movies.png" height="200" alt="movie ranking project preview"/>
-  <h3 class="aisach"><button class="AFG"><a href="./public/biryani.html">The House Of Biryani's</button></a></h3>
-  <img src="./assets/images/biryani.jpg" height="200" alt="birthday invite project preview"/>
-  <hr />
-  <a href="./public/about.html">About Me</a>
-  <a href="./public/contact.html">Contact Me</a>
+  <div class="card">
+    <i class="fa-regular fa-bell"></i>
+    <h5>Web Developer</h5>
+    <div class="pra">
+      <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible</p>
+      <p style="text-align: center;">
+      <a class="button" href="#">Read More</a>
+    </p>
+    </div>
+</div>
+</div>
 
+<!----Contact Me-->
+<div class="contact-me">
+  <p>Let Me Get You A Beautiful Website.</p>
+  <a class="button-two" href="#">Hire Me</a>
+</div>
+
+<!--footer-->
+<footer>
+  <p>Ikram Soudagar</p>
+  <p>Get in touch with me through my social media below:</p>
+  <div class="social">
+    <a href="https://www.facebook.com/ikram.soudagar/"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://instagram.com/ikram_s17?igshid=Y2M0YTlkZGNmOQ=="><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="https://in.linkedin.com/in/ikram-soudagar-660286223"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+  <p class="end">CopyRight By Ikram Soudagar</p>
+</footer>
+   
 </body>
 
 </html>
