@@ -150,7 +150,7 @@ span{
 button{
   background-color: red;
   color: aliceblue;
-  text-decoration: none;
+  text-decoration:none;
   border: 2px solid transparent;
   font-weight: bold;
   padding: 13px 30px;
@@ -176,68 +176,79 @@ button{
   width: 1130px;
   margin: 30px auto;
   text-align: center;
+ 
  }
 
- .box{
+ .pricing-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
- }
+  height: 100vh;
+  gap: 2rem;
+  flex-wrap: wrap;
+  min-width: 375px;
+}
 
- .card{
-  height: 365px;
-  width: 335px;
-  padding: 20px 35px;
-  background: #191919;
-  border-radius: 20px;
-  margin: 15px;
-  position: relative;
-  overflow: hidden;
+.pricing-plan {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 50px;
   text-align: center;
- }
+  min-width: 375px;
+}
 
-
-
- .card i{
-  font-size: 50px;
-  display: block;
-  text-align: center;
-  margin: 25px 0px;
-  color: #f9004d;
- }
-
- h5{
-  color:white;
-  font-size: 23px;
-  margin-bottom: 15px;
- }
-
- 
-
- .pra p{
-  color:#fcfc;
-  font-size: 16px;
-  line-height: 27px;
-  margin-bottom: 25px;
- }
-
- .card .button{
-  background-color: red;
+.plan-title {
+  font-size: 24px;
   color: aliceblue;
-  text-decoration: none;
-  border: 2px solid transparent;
   font-weight: bold;
-  padding: 9px 22px;
-  border-radius: 30px;
-  transition: .4s;
- }
+  margin-bottom: 10px;
+  min-width: 375px;
+}
 
- .card .button:hover{
-  background-color: transparent;
-  border: 2px solid red;
-  cursor: pointer;
- }
+.plan-price {
+  font-size: 48px;
+  color: aquamarine;
+  font-weight: bold;
+  margin-bottom: 10px;
+  min-width: 375px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-features li {
+  margin-bottom: 20px;
+  color: whitesmoke;
+  min-width: 375px;
+}
+
+.plan-button {
+  padding: 10px;
+  background-color: #ff6600;
+  color: black;
+  border-radius: 5px;
+  border: none;
+}
+
+@media (max-width: 1250px) {
+  .pricing-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .title h2{
+    color: aquamarine;
+    font-size: 40px;
+    width: 30px;
+    margin: 15px auto;
+    text-align: center;
+   
+   }
+}
 
  .contact-me{
   width:100%;
